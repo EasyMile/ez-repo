@@ -11,9 +11,9 @@ import botocore.exceptions
 
 from . import __version__
 
-import command
-import error
-import logger
+import ez_repo.command as command
+import ez_repo.error as error
+import ez_repo.logger as logger
 
 
 def build_cli_interface():

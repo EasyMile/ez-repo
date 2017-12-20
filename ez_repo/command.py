@@ -6,11 +6,11 @@ try:
 except NameError:
     pass
 
-import s3
-import artefact
-from error import ArtefactError
-from config import load_config
-from logger import LOGGER
+import ez_repo.s3 as s3
+import ez_repo.artefact as artefact
+from ez_repo.error import ArtefactError
+from ez_repo.config import load_config
+from ez_repo.logger import LOGGER
 
 
 COMMANDS = []

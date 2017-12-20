@@ -7,8 +7,8 @@ import re
 
 import boto3
 
-from storage import Storage
-from error import ExpressionError
+from ez_repo.storage import Storage
+from ez_repo.error import ExpressionError
 
 S3_RESOURCE = boto3.resource("s3")
 
