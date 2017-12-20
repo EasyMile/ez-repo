@@ -7,12 +7,15 @@ Repo helps keeping artefacts organized as it stores them in a normalized way (re
 With repo, you typically write an INI file describing your artefacts and how you want to publish them then you add this line to your CI pipeline and your artefacts will be uploaded in a formalized way.
 The code is pretty simple as it uses Boto3 but it can be improved by adding multiple storage drivers later to enable repo to push on other storage while providing the same interface to users.
 
+# Build status
+   [![Build Status](https://travis-ci.org/EasyMile/ez-repo.svg?branch=master)](https://travis-ci.org/EasyMile/ez-repo)
+
 ## Installation
 
 - With pip
 
 ```bash
-pip install https://github.com/easymile/ez-repo/archive/master.zip
+pip install --user https://github.com/easymile/ez-repo/archive/master.zip
 ```
 
 - Enjoy :)
