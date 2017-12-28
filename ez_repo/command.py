@@ -147,12 +147,12 @@ def cli_cmd(name, help, options):
                  }
              },
              {
-                 "args": ["--filter"],
+                 "args": ["--include"],
                  "kwargs": {
-                     "dest": "filter",
+                     "dest": "include",
                      "default": "*",
-                     "help": "Filter onto artefacts to upload"
-                     "(example:mapeditor|rapidash-ez10"
+                     "help": "Include filter on artefacts to upload."
+                     "(example:product1|product2)"
                  }
              }])
 def upload(args):
@@ -172,7 +172,7 @@ def upload(args):
         return
 
     storage = s3.S3Storage(args.storage_endpoint)
-    custom_filter = _create_filter(args.filter)
+    custom_filter = _create_filter(args.include)
 
     for item in artefacts:
         if args.interactive:
